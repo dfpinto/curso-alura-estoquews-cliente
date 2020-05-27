@@ -19,7 +19,10 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
+<<<<<<< HEAD
 // wsimport -Xnocompile -s src -p br.com.caelum.estoque.cliente http://localhost:8080/estoquews-servidor/teste?wsdl
+=======
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
 @WebService(name = "EstoqueWS", targetNamespace = "http://ws.estoque.caelum.com.br/")
 @XmlSeeAlso({
     ObjectFactory.class
@@ -44,16 +47,25 @@ public interface EstoqueWS {
 
     /**
      * 
+<<<<<<< HEAD
      * @param item
      * @param tokenUsuario
      * @return
      *     returns br.com.caelum.estoque.cliente.CadastrarItemResponse
      * @throws AuthorizationException
+=======
+     * @param tokenUsuario
+     * @param parameters
+     * @return
+     *     returns br.com.caelum.estoque.cliente.CadastrarItemResponse
+     * @throws AutorizacaoFault
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
      */
     @WebMethod(operationName = "CadastrarItem")
     @WebResult(name = "CadastrarItemResponse", targetNamespace = "http://ws.estoque.caelum.com.br/", partName = "result")
     @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
     @Action(input = "http://ws.estoque.caelum.com.br/EstoqueWS/CadastrarItemRequest", output = "http://ws.estoque.caelum.com.br/EstoqueWS/CadastrarItemResponse", fault = {
+<<<<<<< HEAD
         @FaultAction(className = AuthorizationException.class, value = "http://ws.estoque.caelum.com.br/EstoqueWS/CadastrarItem/Fault/AutorizacaoException")
     })
     public CadastrarItemResponse cadastrarItem(
@@ -62,6 +74,16 @@ public interface EstoqueWS {
         @WebParam(name = "tokenUsuario", targetNamespace = "http://ws.estoque.caelum.com.br/", header = true, partName = "tokenUsuario")
         TokenUsuario tokenUsuario)
         throws AuthorizationException
+=======
+        @FaultAction(className = AutorizacaoFault.class, value = "http://ws.estoque.caelum.com.br/EstoqueWS/CadastrarItem/Fault/AutorizacaoException")
+    })
+    public CadastrarItemResponse cadastrarItem(
+        @WebParam(name = "CadastrarItem", targetNamespace = "http://ws.estoque.caelum.com.br/", partName = "parameters")
+        CadastrarItem parameters,
+        @WebParam(name = "tokenUsuario", targetNamespace = "http://ws.estoque.caelum.com.br/", header = true, partName = "tokenUsuario")
+        TokenUsuario tokenUsuario)
+        throws AutorizacaoFault
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
     ;
 
 }

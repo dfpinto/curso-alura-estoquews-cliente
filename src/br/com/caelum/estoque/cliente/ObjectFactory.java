@@ -28,7 +28,13 @@ public class ObjectFactory {
     private final static QName _TodosOsItensResponse_QNAME = new QName("http://ws.estoque.caelum.com.br/", "TodosOsItensResponse");
     private final static QName _TokenUsuario_QNAME = new QName("http://ws.estoque.caelum.com.br/", "tokenUsuario");
     private final static QName _CadastrarItem_QNAME = new QName("http://ws.estoque.caelum.com.br/", "CadastrarItem");
+<<<<<<< HEAD
     private final static QName _AutorizacaoFault_QNAME = new QName("http://ws.estoque.caelum.com.br/", "AutorizacaoFault");
+=======
+    private final static QName _Filtros_QNAME = new QName("http://ws.estoque.caelum.com.br/", "filtros");
+    private final static QName _AutorizacaoFault_QNAME = new QName("http://ws.estoque.caelum.com.br/", "AutorizacaoFault");
+    private final static QName _ListaItens_QNAME = new QName("http://ws.estoque.caelum.com.br/", "listaItens");
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
     private final static QName _TodosOsItens_QNAME = new QName("http://ws.estoque.caelum.com.br/", "TodosOsItens");
 
     /**
@@ -39,6 +45,17 @@ public class ObjectFactory {
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Create an instance of {@link ListaItens }
+     * 
+     */
+    public ListaItens createListaItens() {
+        return new ListaItens();
+    }
+
+    /**
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
      * Create an instance of {@link TodosOsItens }
      * 
      */
@@ -47,11 +64,27 @@ public class ObjectFactory {
     }
 
     /**
+<<<<<<< HEAD
      * Create an instance of {@link Item }
      * 
      */
     public Item createItem() {
         return new Item();
+=======
+     * Create an instance of {@link CadastrarItem }
+     * 
+     */
+    public CadastrarItem createCadastrarItem() {
+        return new CadastrarItem();
+    }
+
+    /**
+     * Create an instance of {@link Filtros }
+     * 
+     */
+    public Filtros createFiltros() {
+        return new Filtros();
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
     }
 
     /**
@@ -87,6 +120,7 @@ public class ObjectFactory {
     }
 
     /**
+<<<<<<< HEAD
      * Create an instance of {@link ListaItens }
      * 
      */
@@ -100,6 +134,13 @@ public class ObjectFactory {
      */
     public Filtros createFiltros() {
         return new Filtros();
+=======
+     * Create an instance of {@link Item }
+     * 
+     */
+    public Item createItem() {
+        return new Item();
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
     }
 
     /**
@@ -130,12 +171,30 @@ public class ObjectFactory {
     }
 
     /**
+<<<<<<< HEAD
      * Create an instance of {@link JAXBElement }{@code <}{@link Item }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://ws.estoque.caelum.com.br/", name = "CadastrarItem")
     public JAXBElement<Item> createCadastrarItem(Item value) {
         return new JAXBElement<Item>(_CadastrarItem_QNAME, Item.class, null, value);
+=======
+     * Create an instance of {@link JAXBElement }{@code <}{@link CadastrarItem }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.estoque.caelum.com.br/", name = "CadastrarItem")
+    public JAXBElement<CadastrarItem> createCadastrarItem(CadastrarItem value) {
+        return new JAXBElement<CadastrarItem>(_CadastrarItem_QNAME, CadastrarItem.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Filtros }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.estoque.caelum.com.br/", name = "filtros")
+    public JAXBElement<Filtros> createFiltros(Filtros value) {
+        return new JAXBElement<Filtros>(_Filtros_QNAME, Filtros.class, null, value);
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
     }
 
     /**
@@ -148,6 +207,18 @@ public class ObjectFactory {
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListaItens }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.estoque.caelum.com.br/", name = "listaItens")
+    public JAXBElement<ListaItens> createListaItens(ListaItens value) {
+        return new JAXBElement<ListaItens>(_ListaItens_QNAME, ListaItens.class, null, value);
+    }
+
+    /**
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
      * Create an instance of {@link JAXBElement }{@code <}{@link TodosOsItens }{@code >}}
      * 
      */

@@ -34,3 +34,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
+=======
+/build/
+/target/
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7

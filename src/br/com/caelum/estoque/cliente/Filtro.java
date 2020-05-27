@@ -3,6 +3,10 @@ package br.com.caelum.estoque.cliente;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+<<<<<<< HEAD
+=======
+import javax.xml.bind.annotation.XmlSchemaType;
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -17,7 +21,11 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="nome" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+<<<<<<< HEAD
  *         &lt;element name="tipo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+=======
+ *         &lt;element name="tipo" type="{http://ws.estoque.caelum.com.br/}tipoItem" minOccurs="0"/>
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -34,7 +42,12 @@ import javax.xml.bind.annotation.XmlType;
 public class Filtro {
 
     protected String nome;
+<<<<<<< HEAD
     protected String tipo;
+=======
+    @XmlSchemaType(name = "string")
+    protected TipoItem tipo;
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
 
     /**
      * Obtém o valor da propriedade nome.
@@ -65,10 +78,17 @@ public class Filtro {
      * 
      * @return
      *     possible object is
+<<<<<<< HEAD
      *     {@link String }
      *     
      */
     public String getTipo() {
+=======
+     *     {@link TipoItem }
+     *     
+     */
+    public TipoItem getTipo() {
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
         return tipo;
     }
 
@@ -77,10 +97,17 @@ public class Filtro {
      * 
      * @param value
      *     allowed object is
+<<<<<<< HEAD
      *     {@link String }
      *     
      */
     public void setTipo(String value) {
+=======
+     *     {@link TipoItem }
+     *     
+     */
+    public void setTipo(TipoItem value) {
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
         this.tipo = value;
     }
 

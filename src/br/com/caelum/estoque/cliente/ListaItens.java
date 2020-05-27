@@ -5,7 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+<<<<<<< HEAD
 import javax.xml.bind.annotation.XmlElement;
+=======
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -34,7 +37,10 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ListaItens {
 
+<<<<<<< HEAD
     @XmlElement(nillable = true)
+=======
+>>>>>>> 07bdbc65ec9dfcec1ba0bddcf2c69451e15983d7
     protected List<Item> item;
 
     /**
